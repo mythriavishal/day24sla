@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        NAME: <input type="text" id="name"><br><br>
+        EMAIL: <input type="email" id="email"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="demo"></p>
+
+    <script>
+        let form=document.getElementById("form");
+        let result=document.getElementById("demo");
+
+        form.addEventListener("submit", function(n){
+            n.preventDefault();
+
+            let x=document.getElementById("name").value;
+        let y=document.getElementById("email").value;
+
+        result.innerHTML="your name is " + x + "<br>your email is: " + y;       
+    });
+    </script>
+</body>
+</html>

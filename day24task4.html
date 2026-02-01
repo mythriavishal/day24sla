@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: antiquewhite;
+            height: 100vh;
+        }
+        div{
+            width: 30vw;
+            height: 30vh;
+            background-color: black;
+            padding: 50px;
+            border: 1px solid black;
+            border-radius: 1000px;
+            color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">Click me</div>
+
+    <script>
+        let x=document.getElementById("div");
+
+        x.addEventListener("mouseover",function(){
+            x.style.backgroundColor="maroon";
+        })
+
+        x.addEventListener("mouseout",function(){
+            x.style.backgroundColor="black";
+        })
+    </script>
+</body>
+</html>

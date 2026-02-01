@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="box">
+        <option value="">Choose a value to show on alert</option>
+        <option value="123">123</option>
+        <option value="234">234</option>
+        <option value="345">345</option>
+    
+
+    </select>
+
+    <script>
+        let x = document.getElementById("box");
+        x.addEventListener("change",function(){
+            alert(x.value);
+        });
+    </script>
+</body>
+</html>

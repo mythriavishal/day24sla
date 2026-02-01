@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <select  id="box">
+        <option value="">Choose</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">yellow</option>
+    </select>
+
+    <script>
+
+        let x=document.getElementById("box");
+        let y=document.getElementById("body");
+        x.addEventListener("change",function(){
+            y.style.backgroundColor=x.value;
+
+            
+        });
+    </script>
+</body>
+</html>
